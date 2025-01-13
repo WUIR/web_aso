@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面跳转示例</title>
+</head>
+<body>
+    <h1>欢迎来到首页</h1>
+    <p>这是一个包含页面跳转功能的示例页面。</p>
+
+    <!-- 使用超链接实现页面跳转 -->
+    <a href="https://www.example.com">点击这里跳转到示例网站</a>
+
+    <!-- 使用按钮实现页面跳转 -->
+    <button onclick="window.location.href='https://www.example.com'">点击按钮跳转到示例网站</button>
+
+    <!-- 使用JavaScript定时跳转 -->
+    <script>
+        // 页面加载完成后3秒自动跳转到示例网站
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = 'https://www.example.com';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
